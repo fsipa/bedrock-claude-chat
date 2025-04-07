@@ -445,13 +445,13 @@ const ChatPage: React.FC = () => {
 
   const activeModels = useMemo(() => {
     return defaultActiveModels;
-    if (!bot) {
+   /* if (!bot) {
       return defaultActiveModels;
     }
     const isActiveModelsEmpty =
       Object.keys(bot?.activeModels ?? {}).length === 0;
-    return isActiveModelsEmpty ? defaultActiveModels : bot.activeModels;
-  }, [bot]);
+    return isActiveModelsEmpty ? defaultActiveModels : bot.activeModels;*/
+  }, []);
 
   return (
     <div
