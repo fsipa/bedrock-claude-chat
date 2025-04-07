@@ -82,7 +82,7 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
     }[]
   >(() => {
     return [
-      {
+      /*{
         modelId: 'claude-v3-haiku',
         label: t('model.claude-v3-haiku.label'),
         description: t('model.claude-v3-haiku.description'),
@@ -95,14 +95,14 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
         description: t('model.claude-v3.5-haiku.description'),
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: false,
-      },
+      },*/
       {
         modelId: 'claude-v3.5-sonnet',
         label: t('model.claude-v3.5-sonnet.label'),
         description: t('model.claude-v3.5-sonnet.description'),
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: false,
-      },
+      }/*,
       {
         modelId: 'claude-v3.5-sonnet-v2',
         label: t('model.claude-v3.5-sonnet-v2.label'),
@@ -219,7 +219,7 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
         description: t('model.mistral-large-2.description'),
         supportMediaType: [],
         supportReasoning: false,
-      },
+      },*/
     ];
   }, [t]);
 
