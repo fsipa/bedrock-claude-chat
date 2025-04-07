@@ -14,21 +14,21 @@ const CLAUDE_SUPPORTED_MEDIA_TYPES = [
   'image/webp',
 ];
 
-/*const NOVA_SUPPORTED_MEDIA_TYPES = [
+const NOVA_SUPPORTED_MEDIA_TYPES = [
   'image/jpeg',
   'image/png',
   'image/gif',
   'image/webp',
 ];
 
-const LLAMA_SUPPORTED_MEDIA_TYPES = [
+/*const LLAMA_SUPPORTED_MEDIA_TYPES = [
   'image/jpeg',
   'image/png',
   'image/gif',
   'image/webp',
 ];*/
 
-const DEFAULT_MODEL: Model = 'claude-v3.5-sonnet';
+const DEFAULT_MODEL: Model = 'claude-v3.7-sonnet';
 
 const useModelState = create<{
   modelId: Model;
@@ -82,14 +82,14 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
     }[]
   >(() => {
     return [
-      /*{
+      {
         modelId: 'claude-v3-haiku',
         label: t('model.claude-v3-haiku.label'),
         description: t('model.claude-v3-haiku.description'),
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: false,
       },
-      {
+      /*{
         modelId: 'claude-v3.5-haiku',
         label: t('model.claude-v3.5-haiku.label'),
         description: t('model.claude-v3.5-haiku.description'),
@@ -109,7 +109,7 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
         description: t('model.claude-v3.5-sonnet-v2.description'),
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: false,
-      },
+      }*/,
       {
         modelId: 'claude-v3.7-sonnet',
         label: t('model.claude-v3.7-sonnet.label'),
@@ -117,13 +117,13 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: true,
       },
-      {
+      /*{
         modelId: 'claude-v3-opus',
         label: t('model.claude-v3-opus.label'),
         description: t('model.claude-v3-opus.description'),
         supportMediaType: CLAUDE_SUPPORTED_MEDIA_TYPES,
         supportReasoning: false,
-      },
+      },*/
       // New Amazon Nova models
       {
         modelId: 'amazon-nova-pro',
@@ -147,7 +147,7 @@ const useModel = (botId?: string | null, activeModels?: ActiveModels) => {
         supportReasoning: false,
       },
       // DeepSeek models
-      {
+      /*{
         modelId: 'deepseek-r1',
         label: t('model.deepseek-r1.label'),
         description: t('model.deepseek-r1.description'),

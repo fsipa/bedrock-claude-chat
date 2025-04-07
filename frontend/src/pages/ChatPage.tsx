@@ -459,7 +459,6 @@ const ChatPage: React.FC = () => {
       onDragOver={onDragOver}
       onDrop={endDnd}
       onDragEnd={endDnd}>
-      Test our Monday Chat bot
       <div className="flex-1 overflow-hidden">
         <div className="sticky top-0 z-10 mb-1.5 flex h-14 w-full items-center justify-between border-b border-gray bg-aws-paper-light p-2 dark:bg-aws-paper-dark">
           <div className="flex w-full justify-between">
